@@ -1,8 +1,12 @@
 from flask import Flask, render_template, request, jsonify
 import os
 import numpy as np
+import yaml
+import joblib
+
 from prediction_service import prediction
 
+params_path = "params.yaml"
 webapp_root = "webapp"
 
 static_dir = os.path.join(webapp_root, "static")
@@ -26,6 +30,8 @@ def predict(data):
 def api_response(request):
     pass
 
+@app.route("/", methods=["GET","POST"])
+def index():
     if request.method == "POST":
         try:
             if request.form:
