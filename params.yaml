@@ -31,7 +31,7 @@ webapp_model_dir: prediction_service/Model/model.joblib
 
 mlflow_config:
   artifacts_dir: artifacts
-  experiment_nam: ElasticNet regression
+  experiment_name: ElasticNet regression
   run_name: mlops
   registered_model_name: ElastinNetWineModel
   remote_server_uri: http://0.0.0.0.1234

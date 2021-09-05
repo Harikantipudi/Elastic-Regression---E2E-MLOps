@@ -58,3 +58,9 @@ stages:
     - path: saved_models/model.joblib
       md5: 4aaf9f32927ec8eae489f57ad54944fa
       size: 818
+  log_production_model:
+    cmd: python src/log_production_model.py --config=params.yaml
+    deps:
+    - path: src/log_production_model.py
+      md5: d41d8cd98f00b204e9800998ecf8427e
+      size: 0
