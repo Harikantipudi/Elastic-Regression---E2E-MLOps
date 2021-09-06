@@ -1,64 +1,63 @@
-create env
-```bash
-conda create -n wineq python=3.7 -y
-```
+#####################################################################
+        MLOPS IMPLEMENTATION USING MLFLOW, DVC AND HEROKU
+#####################################################################
+This is an initial attempt to create an end to end MLOps pipeline leveraging 
+the likes of OpenSource Tools  like  DVC, MLFLOW and Heroku
 
-activate env
-```bash
-conda activate wineq
-```
-create a req file
+A)DVC is used for Data Versioning Control and establishing the overall Pipeline
+B)MLFLOW is used for Model Registry and Experiment and Metrics Tracking 
+C)Heroku is Paas that enables us to build,run and operate the application entirely on the cloud
 
-install the requirements
-```bash
-pip install -r requirements.txt
-```
-download the data from
+End to End Integration has been done across various components Git,DVC,MLFlow and Heroku 
+and there is seamless integration and automation across
+#######################################################################
+
+
+Prerequisite
+######################################################################
+A)Run and install requirements initially
+B)pip install -r requirements.txt
+C)Have a Heroku Login
+D)Download the data from
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5?usp=sharing
 
-```bash
-git init
-```
-```bash
-dvc init
-```
-```bash
-dvc add data_given/winequality.csv
-```
-```bash
-git add .
-```
-```bash
-git commit -m "first commit"
-```
-```bash
-git add . && git commit -m "update Readme.md"
-```
-```bash
-git remote add origin https://github.com/Harikantipudi/dvcdemo.git
-git branch -M main
-git push -u origin main
-```
 
-tox command
-```bash
-tox
-```
 
-for rebuilding
-```bash
-tox -r
-```
-pytest command
-```bash
-pytest -v
-```
+Running Experiments
+######################################################################
+To run and track experiments
+ A) Data to be added to data_given folders
+ B) Change parameters in params.yaml file
+ C) Run MLPipe Line dvc repro
+#######################################################################
 
-setup commands
-```bash
-pip install -e .
-```
-build your own package commands
-```bash
-python setup.py ddist bdist wheel
-```
+
+Testing
+######################################################################
+To test the code,logic build and dependencies
+ A) Add/Modify test cases test_config.py
+ B) Run Pytest -V
+######################################################################
+
+Serving 
+######################################################################
+web App @ https://winequality-hk.herokuapp.com/
+MLflow server @ 127.0.0.1.5000
+######################################################################
+
+Running ML Flow and Apps
+######################################################################
+A)Application : python app.py
+B)MLFlow : mlflow server --default-artifact-root ./artifacts --backend-store-uri sqlite:///mlflow.sqlite 
+######################################################################
+
+Contributing
+######################################################################
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+######################################################################
+
+
+License
+#######################################################################
+MIT
+#######################################################################
