@@ -1,5 +1,5 @@
 action: GLOB, msg: packaging
-cwd: C:\Users\80223702\desktop\personal\Productioncode\Wafer
+cwd: C:\Users\80223702\desktop\personal\Productioncode\wafer
 cmd: 'c:\users\80223702\anaconda3\envs\wineq\python.exe' setup.py sdist --formats=zip --dist-dir '.tox\dist'
 running sdist
 running egg_info
