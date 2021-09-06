@@ -1,11 +1,11 @@
 # E2E MLOPS Implementation Using MLFLOW, DVC and Heroku
 
 
-> This is an initial attempt to create an end to end MLOps pipeline leveraging the likes of OpenSource   Tools  like DVC, MLFLOW and Heroku
+ This is an initial attempt to create an end to end MLOps pipeline leveraging the likes of OpenSource Tools  like DVC, MLFLOW and Heroku
 
-   A)DVC is used for Data Versioning Control and establishing the overall Pipeline 
-   B)MLFLOW is used for Model Registry and Experiment and Metrics Tracking 
-   C)Heroku is Paas that enables us to build,run and operate the application entirely on the cloud
+   -DVC is used for Data Versioning Control and establishing the overall Pipeline 
+   -MLFLOW is used for Model Registry and Experiment and Metrics Tracking 
+   -Heroku is Paas that enables us to build,run and operate the application entirely on the cloud
 
    End to End Integration has been done across various components Git,DVC,MLFlow and Heroku and there is seamless integration and automation across
 
