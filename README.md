@@ -14,7 +14,7 @@ C)Heroku is Paas that enables us to build,run and operate the application entire
 ---
 
 ### Table of Contents
-You're sections headers will be used to reference location of destination.
+
 
 - [Prerequisites](#Prerequisites)
 - [Experiments](#Experiments)
